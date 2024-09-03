@@ -1,5 +1,5 @@
 # Bunny Watcher
-> Watch a configured filesystem for changes and execute update to a Bunny CDN storage.
+> Watch local filesystem for changes and execute update to a Bunny CDN storage.
 
 The application will watch a specific local filesystem and executes updates to a remote Bunny CDN storage when filesystem's state updated.
 
