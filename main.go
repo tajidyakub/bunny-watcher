@@ -109,5 +109,15 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Print(config)
+	fmt.Println("Validating the config file.")
+
+	i, errExist := os.Stat(config.Local.Path)
+
+	if errExist != nil {
+		panic(errExist)
+	}
+
+	fmt.Println("Local path exists.")
+
+	fmt.Println(i)
 }
